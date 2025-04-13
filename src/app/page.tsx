@@ -215,6 +215,11 @@ export default function Home() {
 
             {/* Three.js 컴포넌트에 ISS 위치 전달 */}
             <div className="rounded-xl overflow-hidden shadow-2xl mb-8">
+              {/* 위치 표시 설명 추가 */}
+              <div className="bg-black/50 p-4 text-center space-y-2">
+                <p className="text-[#00ff9d]">🟢 초록색 점: 내 현재 위치</p>
+                <p className="text-red-400">🔴 빨간색 점: ISS 🛰️ 위치</p>
+              </div>
               <ThreeScene position={position} issLocation={issLocation} />
             </div>
 
